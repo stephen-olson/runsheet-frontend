@@ -1,0 +1,80 @@
+ {
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@mui/icons-material": "^6.1.9",
+      "@mui/material": "^6.1.9",
+      "@emotion/react": "^11.13.5",
+      "@emotion/styled": "^11.13.5",
+      "@types/node": "^16.18.132",
+      "@types/react": "^18.3.17",
+      "@types/react-dom": "^18.3.5",
+      "axios": "^1.7.9",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "react-dropzone": "^14.3.5",
+      "react-scripts": "5.0.1",
+      "typescript": "^4.9.5",
+      "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+  4. Click "Commit changes"
+
+  Step 2: Add TypeScript Config
+
+  5. Click "Add file" → "Create new file"
+  6. Filename: tsconfig.json
+  7. Copy and paste this:
+
+  {
+    "compilerOptions": {
+      "target": "es5",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "es6"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx"
+    },
+    "include": [
+      "src"
+    ]
+  }
